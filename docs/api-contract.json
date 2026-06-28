@@ -1,0 +1,62 @@
+{
+  "success": true,
+  "file": {
+    "filename": "sample.exe",
+    "size": 1234567,
+    "extension": "exe"
+  },
+  "hashes": {
+    "md5": "string",
+    "sha1": "string",
+    "sha256": "string"
+  },
+  "metadata": {
+    "filename": "sample.exe",
+    "extension": "exe",
+    "file_size": 1234567,
+    "mime_type": "application/x-msdownload",
+    "creation_time": "2026-06-26T13:41:03.846821+00:00",
+    "modification_time": "2026-06-26T13:41:03.916728+00:00",
+    "access_time": "2026-06-26T13:41:04.224824+00:00"
+  },
+  "analysis": {
+    "verdict": "Safe",
+    "verdict_color": "#16a34a",
+    "threat_score": 0,
+    "detection_ratio": "0/72",
+    "stats": {
+      "malicious": 0,
+      "suspicious": 0,
+      "harmless": 70,
+      "undetected": 2,
+      "timeout": 0,
+      "failure": 0,
+      "type_unsupported": 0,
+      "confirmed_timeout": 0,
+      "total_engines": 72
+    },
+    "entropy_score": 6.12,
+    "suspicious_indicators": [
+      {
+        "pattern": "powershell",
+        "severity": "high",
+        "description": "PowerShell execution detected in file strings"
+      }
+    ],
+    "risk_flags_count": 1,
+    "engines": [
+      {
+        "engine": "EngineName",
+        "category": "malicious",
+        "result": "Trojan.Generic",
+        "method": "blacklist",
+        "version": "1.2.3"
+      }
+    ],
+    "meaningful_name": "sample.exe",
+    "magic": "PE32 executable",
+    "times_submitted": 12,
+    "reputation": -5,
+    "file_type": "Win32 EXE"
+  }
+}

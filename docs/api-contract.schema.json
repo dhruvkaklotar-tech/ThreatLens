@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["success", "file", "hashes", "metadata", "analysis"],
+  "properties": {
+    "success": { "type": "boolean" },
+    "file": {
+      "type": "object",
+      "required": ["filename", "size", "extension"],
+      "properties": {
+        "filename": { "type": "string" },
+        "size": { "type": "integer", "minimum": 0 },
+        "extension": { "type": "string" }
+      }
+    },
+    "hashes": {
+      "type": "object",
+      "required": ["md5", "sha1", "sha256"],
+      "properties": {
+        "md5": { "type": "string" },
+        "sha1": { "type": "string" },
+        "sha256": { "type": "string" }
+      }
+    },
+    "metadata": { "type": "object" },
+    "analysis": {
+      "type": "object",
+      "required": [
+        "verdict",
+        "verdict_color",
+        "threat_score",
+        "detection_ratio",
+        "stats",
+        "entropy_score",
+        "suspicious_indicators",
+        "risk_flags_count",
+        "engines"
+      ],
+      "properties": {
+        "verdict": { "type": "string", "enum": ["Safe", "Suspicious", "Malicious"] },
+        "verdict_color": { "type": "string" },
+        "threat_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "detection_ratio": { "type": "string" },
+        "stats": { "type": "object" },
+        "entropy_score": { "type": "number", "minimum": 0, "maximum": 8 },
+        "suspicious_indicators": { "type": "array" },
+        "risk_flags_count": { "type": "integer", "minimum": 0 },
+        "engines": { "type": "array" }
+      }
+    }
+  }
+}

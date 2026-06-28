@@ -1,0 +1,48 @@
+{
+  "success": true,
+  "file": {
+    "filename": "Git-2.54.0-64-bit.exe",
+    "size": 65175776,
+    "extension": "exe"
+  },
+  "hashes": {
+    "md5": "4c20847119385454c6aea60adedd0fa5",
+    "sha1": "2535495cf070bc6071e4a77fe62543d516e75c70",
+    "sha256": "2b96e7854f0520f0f6b709c21041d9801b1be44d5e1a0d9fa621b2fbc40f1983"
+  },
+  "metadata": {
+    "filename": "Git-2.54.0-64-bit.exe",
+    "extension": "exe",
+    "file_size": 65175776,
+    "mime_type": "application/x-msdownload",
+    "creation_time": "2026-06-26T13:41:03.846821+00:00",
+    "modification_time": "2026-06-26T13:41:03.916728+00:00",
+    "access_time": "2026-06-26T13:41:04.224824+00:00"
+  },
+  "analysis": {
+    "verdict": "Safe",
+    "verdict_color": "#16a34a",
+    "threat_score": 0,
+    "detection_ratio": "0/72",
+    "stats": {
+      "malicious": 0,
+      "suspicious": 0,
+      "harmless": 70,
+      "undetected": 2,
+      "timeout": 0,
+      "failure": 0,
+      "type_unsupported": 0,
+      "confirmed_timeout": 0,
+      "total_engines": 72
+    },
+    "entropy_score": 0.0,
+    "suspicious_indicators": [],
+    "risk_flags_count": 0,
+    "engines": [],
+    "meaningful_name": "Git-2.54.0-64-bit.exe",
+    "magic": "",
+    "times_submitted": 0,
+    "reputation": 0,
+    "file_type": "Win32 EXE"
+  }
+}
