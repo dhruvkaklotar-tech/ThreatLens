@@ -124,17 +124,6 @@ pytest -v
 
 ---
 
-## 👨‍💻 Author & Lead Architect
-
-**Dhruv Kaklotar**
-*Student of Computer Engineering & Cybersecurity Researcher*
-- 📍 **Location**: Surat, Gujarat, India
-- 🌐 **GitHub**: [@dhruvkaklotar-tech](https://github.com/dhruvkaklotar-tech)
-- 💼 **LinkedIn**: [Dhruv Kaklotar](https://www.linkedin.com/in/dhruv-kaklotar-8b4295362)
-- ✉️ **Secure Mail**: `dhruvkaklotar@proton.me`
-
----
-
 ## 📜 License
 
 Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for detailed terms and permissions.
