@@ -1,0 +1,16 @@
+name: Render Keep Alive Service
+
+on:
+  schedule:
+    # Trigger every 10 minutes to prevent Render free tier sleep (15 min timeout)
+    - cron: '*/10 * * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI if needed
+
+jobs:
+  keep-alive:
+    name: Ping ThreatLens Health Endpoint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Keep-Alive HTTP Ping
+        run: |
+          curl -s -f https://threatlens.me/api/v1/health || exit 0
